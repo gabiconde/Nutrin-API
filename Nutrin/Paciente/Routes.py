@@ -3,6 +3,10 @@ from flask import jsonify, request
 from Nutrin import app
 from Nutrin import response
 
+@app.route('/a')
+def index():
+    return jsonify('hahahahahah2')
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static', 'images'),
