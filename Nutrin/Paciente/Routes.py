@@ -3,12 +3,10 @@ from flask import jsonify, request
 from Nutrin import app
 from Nutrin import response
 
-@app.route('/favicon.ico', methods=["GET"])
+@app.route('/favicon.ico')
 def favicon():
-    response["Status"] = "Não sei o que é isso"
-    response["Dados"] = ""
-    response["Mensagem"] = "mensagem"
-    return jsonify(response)
+    return send_from_directory(os.path.join(app.root_path, 'static', 'images'),
+                               'favicon.ico', mimetype='image/png')
 
 
 @app.route('/paciente/cadastrar', methods=["POST"])
