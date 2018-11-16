@@ -3,7 +3,7 @@ from flask import jsonify, request
 from Nutrin import app
 from Nutrin import response
 
-@app.route('/a')
+@app.route('/xabru')
 def index():
     return jsonify('hahahahahah2')
 
