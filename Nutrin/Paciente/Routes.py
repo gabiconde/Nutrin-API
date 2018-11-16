@@ -6,8 +6,7 @@ from Nutrin import response
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static', 'images'),
-                               'favicon.ico', mimetype='image/png')
-
+                               'favicon.ico', mimetype='image/jpg')
 
 @app.route('/paciente/cadastrar', methods=["POST"])
 def CadastrarPacienteRoute():
