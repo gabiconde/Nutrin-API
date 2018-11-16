@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe",
+    "python.pythonPath": "C:\\Users\\gabic\\.virtualenvs\\Nutrin-API-iIZAld7E\\scripts\\python.exe",
     "python.linting.pylintEnabled": false
 }
